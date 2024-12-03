@@ -1,2 +1,5 @@
-#Project Description
-This project implements a program for geospatial analysis of Ukraine's border and its division into squares, followed by data processing in a database and visualization on a web map using Leaflet.
+# Geoanalysis and Visualization of Ukraine's Border
+
+This project implements a geoanalysis program that processes the border of Ukraine, divides it into squares, and visualizes the data on an interactive web map using the **Leaflet** library. The project also supports storing and processing data in a relational database PostgreSQL
+
+---
