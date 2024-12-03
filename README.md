@@ -46,7 +46,7 @@ This project implements a geoanalysis program that processes the border of Ukrai
          - DB Host(default: localhost).
          - DB Port(default: 5432 for PostgreSQL).
          - DB Name.
-   2) open terminal in project folder and run command "python -m http.server" and go by link: http://localhost:8000/index.html
+   2) open terminal in project folder and run command "python -m http.server" or "py -m http.server" and go by link: http://localhost:8000/index.html
 
 
 ## Dataset Source
@@ -58,4 +58,7 @@ This project implements a geoanalysis program that processes the border of Ukrai
   
 **Notes**:
 - Ensure the dataset file (geoBoundaries-UKR-ADM0.geojson) is placed in the root directory of the project before running the program.
+
+## Program Result
+![image](https://github.com/user-attachments/assets/e34a6a9e-174d-4ebc-864e-e502cddc4ec0)
 
