@@ -46,5 +46,15 @@ This project implements a geoanalysis program that processes the border of Ukrai
          - DB Port(default: 5432 for PostgreSQL).
          - DB Name.
    2) open terminal in project folder and run command "python -m http.server" and go by link: http://localhost:8000/index.html
-   
+
+
+## Dataset Source
+- The dataset containing the border coordinates of Ukraine was sourced from [geoBoundaries](https://www.geoboundaries.org/), an open database for political administrative boundaries.
+
+**Dataset Details**:
+- File format: GeoJSON
+- Boundary level: ADM0 (country-level boundary)
+- License: Open and free for academic and non-commercial use.
+**Notes**:
+- Ensure the dataset file (e.g., geoBoundaries-UKR-ADM0.geojson) is placed in the root directory of the project before running the program.
       
