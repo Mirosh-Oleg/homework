@@ -71,5 +71,6 @@ Program Result  over the capital and neighboring regions
 
 Program result over the country
 
-![image](https://github.com/user-attachments/assets/320f2907-e209-47a1-9c13-025560985020)
+![image](https://github.com/user-attachments/assets/64d7b730-b441-4f11-8755-fe183f6ff0aa)
+
 
