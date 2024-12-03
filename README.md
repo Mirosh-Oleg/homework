@@ -60,7 +60,7 @@ This project implements a geoanalysis program that processes the border of Ukrai
 - Ensure the dataset file (geoBoundaries-UKR-ADM0.geojson) is placed in the root directory of the project before running the program.
 
 ## Program Result
-**results for square edge = 10000 meters ,radius = 12000 meters**
+**results for square edge = 10000 meters and radius = 12000 meters**
 
 Program Result in border 
 ![image](https://github.com/user-attachments/assets/e34a6a9e-174d-4ebc-864e-e502cddc4ec0)
