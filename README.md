@@ -46,4 +46,5 @@ This project implements a geoanalysis program that processes the border of Ukrai
          - DB Port(default: 5432 for PostgreSQL).
          - DB Name.
    2) open terminal in project folder and run command "python -m http.server" and go by link: http://localhost:8000/index.html
+   
       
