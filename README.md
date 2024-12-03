@@ -63,7 +63,7 @@ This project implements a geoanalysis program that processes the border of Ukrai
 Program Result in border 
 ![image](https://github.com/user-attachments/assets/e34a6a9e-174d-4ebc-864e-e502cddc4ec0)
 
-Program Result  over capital
+Program Result  over the capital and neighboring regions
 
 ![output1](https://github.com/user-attachments/assets/6296d3da-0a36-46f8-b377-5c3c2cc7de9d)
 
