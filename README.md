@@ -54,7 +54,7 @@ This project implements a geoanalysis program that processes the border of Ukrai
 **Dataset Details**:
 - File format: GeoJSON
 - Boundary level: ADM0 (country-level boundary)
-- License: Open and free for academic and non-commercial use.
+  
 **Notes**:
 - Ensure the dataset file (e.g., geoBoundaries-UKR-ADM0.geojson) is placed in the root directory of the project before running the program.
       
