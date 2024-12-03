@@ -1,0 +1,7 @@
+flask==3.1.0	
+flask-cors==5.0.0
+geopandas==1.0.1
+sqlalchemy==2.0.36
+shapely==2.0.6
+tqdm==4.67.1
+leaflet==0.0.3
