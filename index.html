@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ukraine Border Map</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+<div id="map" style="width: 100%; height: 800px;"></div>
+<script>
+<!--    var map = L.map('map').setView([52.1416, 31.4125], 12); // Zoom to border-->
+    var map = L.map('map').setView([50.4501, 30.5234], 10); //Zoom to Kyiv
+<!--    var map = L.map('map').setView([49.0139, 31.2858], 7); // Zoom to center-->
+    // Add base tile layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+    }).addTo(map);
+
+    // Create panes for layer control
+    map.createPane('gridPane');    // Pane for the grid (lowest layer)
+    map.createPane('borderPane');  // Pane for the border (middle layer)
+    map.createPane('sectorPane');  // Pane for the sectors (top layer)
+
+    // Assign Z-indices to panes
+    map.getPane('gridPane').style.zIndex = 400;
+    map.getPane('borderPane').style.zIndex = 500;
+    map.getPane('sectorPane').style.zIndex = 600;
+
+    // Load the grid (lowest layer)
+    fetch('http://127.0.0.1:5000/grid')
+        .then(response => response.json())
+        .then(data => {
+            L.geoJSON(data, {
+                pane: 'gridPane', // Assign to grid pane
+                style: {
+                    color: "blue",  // Grid color
+                    weight: 1,      // Line thickness
+                    fillOpacity: 0.1 // Transparency
+                }
+            }).addTo(map);
+        });
+
+    // Load the border (middle layer)
+    fetch('http://127.0.0.1:5000/border')
+        .then(response => response.json())
+        .then(data => {
+            L.geoJSON(data, {
+                pane: 'borderPane', // Assign to border pane
+                style: {
+                    color: "red",  // Border color
+                    weight: 3      // Line thickness
+                }
+            }).addTo(map);
+        });
+
+    // Load the sectors (top layer)
+    fetch('http://127.0.0.1:5000/sectors')
+        .then(response => response.json())
+        .then(data => {
+            L.geoJSON(data, {
+                pane: 'sectorPane', // Assign to sector pane
+                style: {
+                    color: "yellow",  // Sector color
+                    weight: 2         // Line thickness
+                }
+            }).addTo(map);
+        });
+
+     // Додавання шару OpenStreetMap з атрибуцією
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+    }).addTo(map);
+</script>
+</body>
+</html>
