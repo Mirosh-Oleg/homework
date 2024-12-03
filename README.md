@@ -24,7 +24,7 @@ This project implements a geoanalysis program that processes the border of Ukrai
    - The user must first create an empty database in PostgreSQL and named it.
   
 2. **Run main.py**
-   what this fild do:
+   what this file do:
       1) Connection to database
          - The program prompts the user for database(DB) connection parameters:
             - DB Username.
@@ -36,3 +36,14 @@ This project implements a geoanalysis program that processes the border of Ukrai
       2) The program prompts the user for size of the grid squares in meters.
       3) The program prompts the user for radius for sectors in meters.
       4) The program prompts the user for valuse for azimuths.
+
+3. **How to run interactive map**
+   1) run map.py
+      - The program prompts the user for database(DB) connection parameters:
+         - DB Username.
+         - DB password.
+         - DB Host(default: localhost).
+         - DB Port(default: 5432 for PostgreSQL).
+         - DB Name.
+   2) open terminal in project folder and run command "python -m http.server" and go by link: http://localhost:8000/index.html
+      
