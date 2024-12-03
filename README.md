@@ -5,7 +5,7 @@ This project implements a geoanalysis program that processes the border of Ukrai
 ---
 
 ## Requirements
-1. **frameworks**:
+1. **Frameworks and Libraries**:
    - flask
    - flask-cors
    - geopandas
@@ -13,30 +13,22 @@ This project implements a geoanalysis program that processes the border of Ukrai
    - shapely
    - tqdm
    - leaflet
-2. **database**:
+2. **Database**:
    - empty PostgreSQL database
-  
   
 ---
 
-## How It Works
+## How To Run It
 
 1. **Database setyp**:
    - The user must first create an empty database in PostgreSQL and named it.
   
-2. **Database Connection**:
-   - The program prompts the user for database connection parameters (username, password, host, port, and database name).
-
-3. **Program Processing**:
-   - Loads Ukraine's border coordinates.
-   - Divides the territory into a grid of squares.
-   - Generates sectors from each vertex of the grid.
-   - Calculates intersections: The program computes which vertices of the grid are intersected by each sector.
-
-4. **Storing and Processing Data**:
-   - Saves the border, grid vertices, and sector intersection results in the database.
-
-5. **Visualization**:
-   - Displays the border, grid, and sectors on an interactive map using **Leaflet**.
-
----
+2. **Run main.py**
+   1. Connection to database
+   - The program prompts the user for database(DB) connection parameters:
+   - DB Username.
+   - DB password.
+   - DB Host(default: localhost).
+   - DB Port(default: 5432 for PostgreSQL).
+   - DB Name.
+   2. The program prompts the user for size of the grid squares in meters
