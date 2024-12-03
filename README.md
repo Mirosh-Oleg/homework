@@ -14,7 +14,12 @@ This project implements a geoanalysis program that processes the border of Ukrai
    - tqdm
    - leaflet
 2. **Database**:
-   - empty PostgreSQL database
+   
+   PostgreSQL (version:17)
+   
+   Download it from the [official website](https://www.postgresql.org/download/).
+   
+   empty PostgreSQL database
   
 ---
 
@@ -56,5 +61,5 @@ This project implements a geoanalysis program that processes the border of Ukrai
 - Boundary level: ADM0 (country-level boundary)
   
 **Notes**:
-- Ensure the dataset file (e.g., geoBoundaries-UKR-ADM0.geojson) is placed in the root directory of the project before running the program.
-      
+- Ensure the dataset file (geoBoundaries-UKR-ADM0.geojson) is placed in the root directory of the project before running the program.
+
