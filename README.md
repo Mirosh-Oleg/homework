@@ -60,5 +60,14 @@ This project implements a geoanalysis program that processes the border of Ukrai
 - Ensure the dataset file (geoBoundaries-UKR-ADM0.geojson) is placed in the root directory of the project before running the program.
 
 ## Program Result
+Program Result in border 
 ![image](https://github.com/user-attachments/assets/e34a6a9e-174d-4ebc-864e-e502cddc4ec0)
+
+Program Result  over capital
+
+![output1](https://github.com/user-attachments/assets/6296d3da-0a36-46f8-b377-5c3c2cc7de9d)
+
+Program result over the country
+
+![image](https://github.com/user-attachments/assets/320f2907-e209-47a1-9c13-025560985020)
 
