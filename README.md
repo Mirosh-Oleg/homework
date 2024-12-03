@@ -35,15 +35,15 @@ This project implements a geoanalysis program that processes the border of Ukrai
 
 ## Requirements
 -frameworks:
-  flask
-  flask-cors
-  geopandas
-  sqlalchemy
-  shapely
-  tqdm
-  leaflet
+  --flask
+  --flask-cors
+  --geopandas
+  --sqlalchemy
+  --shapely
+  --tqdm
+  --leaflet
 -database:
-  empty PostgreSQL database
+  --empty PostgreSQL database
   
   
 ---
